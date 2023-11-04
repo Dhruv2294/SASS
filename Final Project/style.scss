@@ -1,0 +1,709 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$Color-white: #ffffff;
+$Color-black: #000000;
+$bg-color: #0173d0d8;
+$color-dark: #494541;
+$color-lite: #656565;
+$oswald-Font: 'Oswald', sans-serif;
+$pacifico-Font: 'Pacifico', cursive;
+$open-font: 'Open Sans', sans-serif;
+
+@mixin flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    height: 75px;
+    width: 100%;
+    background-color: $bg-color;
+    
+    @include flex-box();
+
+
+    .menu {
+
+        a {
+            text-decoration: none;
+            color: $Color-black;
+            text-transform: uppercase;
+            padding: 0 20px;
+            font-family: $oswald-Font;
+            font-size: 18px;
+
+            &:hover {
+                background-color: $Color-white;
+                transition: 1s;
+                border-radius: 8px;
+                color: $Color-black;
+            }
+        }
+    }
+}
+
+.banner {
+    background-image: url(images/banner.jpg);
+    height: 100vh;
+    width: 100wh;
+    background-position: center;
+    background-size: cover;
+
+    .text {
+        @include flex-box();
+        flex-direction: column;
+        height: 800px;
+        width: 50%;
+
+        .super {
+            color: $Color-white;
+            font-size: 42px;
+            font-family: $pacifico-Font;
+        }
+
+        .fun {
+            color: $Color-white;
+            font-size: 84px;
+            font-family: $oswald-Font;
+            text-transform: uppercase;
+            letter-spacing: 5.2px;
+        }
+
+        .best {
+            color: $Color-white;
+            font-family: $oswald-Font;
+            font-size: 42px;
+            text-transform: uppercase;
+
+        }
+
+        .btn {
+            background-color: $Color-white;
+            font-size: 20px;
+            font-family: $oswald-Font;
+            border: none;
+            height: 35px;
+            width: 120px;
+            text-align: center;
+            margin-top: 25px;
+            border-radius: 8px;
+
+            &:hover {
+                background-color: #454343;
+                color: $Color-black;
+                transition: 1s;
+            }
+        }
+
+    }
+
+}
+
+.welcome {
+    height: 250px;
+    width: 100%;
+    @include flex-box();
+    flex-direction: column;
+
+    
+
+    h2 {
+        color: $Color-black;
+        font-size: 32px;
+        font-family: $pacifico-Font;
+    }
+
+    h1 {
+        color: $color-dark;
+        font-size: 56px;
+        font-family: $oswald-Font;
+        text-transform: uppercase;
+    }
+}
+
+.about-sec {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+
+    img {
+        height: 440px;
+        width: 450px;
+    }
+
+    h4 {
+        width: 75%;
+        padding: 0 15px;
+        color: $color-dark;
+        font-size: 24px;
+        font-family: $oswald-Font;
+    }
+
+    p {
+        width: 85%;
+        padding: 30px 15px;
+        font-size: 16px;
+        color: $color-lite;
+        font-family: $open-font;
+
+    }
+
+    .flot {
+        display: flex;
+        flex-direction: row;
+
+        .p-text {
+            width: 80%;
+            display: inline-block;
+            padding: 10px 15px;
+            color: $color-lite;
+            font-size: 16px;
+            font-family: $open-font;
+        }
+
+        h5 {
+            padding: 10px 15px;
+            font-size: 24px;
+            font-family: $oswald-Font;
+            color: $color-dark;
+        }
+
+        i {
+            margin: 0 45px;
+            padding-top: 15px;
+            border: 1px solid #2B2825;
+            background-color: $Color-white;
+            height: 70px;
+            width: 70px;
+            text-align: center;
+            color: $Color-black;
+        }
+
+        .d1 {
+            margin-right: 55px;
+        }
+    }
+
+}
+
+/* counter start */
+
+.sectionClass {
+    background-color: #656565;
+    background-blend-mode: darken;
+    position: relative;
+    display: block;
+}
+
+.fullWidth {
+    width: 100% !important;
+    display: table;
+    float: none;
+    padding: 0;
+    min-height: 1px;
+    height: 100%;
+    position: relative;
+}
+
+
+.sectiontitle {
+    background-position: center;
+    margin: 30px 0 0px;
+    text-align: center;
+    min-height: 20px;
+}
+
+.sectiontitle h2 {
+    font-size: 30px;
+    color: #222;
+    margin-bottom: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+
+.headerLine {
+    width: 160px;
+    height: 2px;
+    display: inline-block;
+    background: #101F2E;
+}
+
+
+.projectFactsWrap {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+#projectFacts .fullWidth {
+    padding: 0;
+}
+
+.projectFactsWrap .item {
+    width: 25%;
+    height: 100%;
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.projectFactsWrap .item p.number {
+    font-size: 40px;
+    padding: 0;
+    font-weight: bold;
+    color: $Color-black !important;
+}
+
+.projectFactsWrap .item p {
+    color: $Color-white;
+    font-size: 18px;
+    margin: 0;
+    padding: 10px;
+    font-family: $oswald-Font;
+}
+
+
+.projectFactsWrap .item span {
+    width: 60px;
+    background: rgba(255, 255, 255, 0.8);
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.projectFactsWrap .item i {
+    height: 70px;
+    width: 70px;
+    padding-top: 12px;
+    font-size: 40px;
+    color: $Color-black;
+    background-color: $Color-white;
+    border: 2px solid $Color-black;
+}
+
+
+.projectFactsWrap .item:hover i,
+.projectFactsWrap .item:hover p {
+    color: black;
+}
+
+.projectFactsWrap .item:hover span {
+    background: black;
+}
+
+/* counter end */
+
+.btn-all {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+
+    .btn-3 {
+        @include flex-box();
+        border: 2px solid $Color-white;
+        height: 70px;
+        width: 300px;
+        background-color: $color-lite;
+
+        .btn-enjoy {
+            height: 45px;
+            width: 90px;
+            background-color: $color-dark;
+            color: $Color-black;
+            text-transform: uppercase;
+            padding-top: 5px;
+            border: none;
+            font-family: $oswald-Font;
+            font-size: 16px;
+
+            &:hover {
+                background-color: $Color-white;
+                transition: 1s;
+                border-radius: 8px;
+            }
+
+        }
+    }
+}
+
+.pricing {
+    max-width: 500px;
+    display: flex;
+    background-color: #faf3eb;
+    margin: 10px 10px;
+
+    .image-s img {
+        height: 85px;
+        width: 140px;
+        background-position: center;
+        background-size: cover;
+        display: block;
+        overflow: hidden;
+        object-fit: cover;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .night {
+        color: $Color-white;
+        font-size: 24px;
+        font-family: $oswald-Font;
+        background-color: $color-dark;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .rides {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h5 {
+        color: $color-dark;
+        padding: 15px 15px;
+        font-size: 20px;
+        font-family: $oswald-Font;
+        text-transform: uppercase;
+    }
+
+    .text {
+        width: 80%;
+        padding: 5px 15px;
+        color: $color-lite;
+        font-family: $open-font;
+        font-size: 16px;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.max-width {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.service {
+    background: linear-gradient(rgba(43, 40, 37, .9), rgba(43, 40, 37, .9));
+    height: 450px;
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+    margin-top: 150px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+
+    .box1,
+    .box2,
+    .box3 {
+        height: 260px;
+        width: 320px;
+        background-color: $Color-white;
+        text-align: center;
+        margin: 15px;
+        border: 2px solid $Color-black;
+        margin: -80px 20px;
+        display: block;
+
+        h4 {
+            font-size: 24px;
+            font-family: $oswald-Font;
+            color: $color-dark;
+            padding-top: 25px;
+        }
+
+        p {
+            font-size: 16px;
+            font-family: $open-font;
+            color: $Color-black;
+            padding: 15px 20px;
+            width: 90%;
+            text-align: center !important;
+        }
+
+        .read-more {
+            font-size: 16px;
+            font-family: $open-font;
+            color: $color-dark;
+            padding-top: 10px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.Discount {
+    color: $Color-black;
+    font-size: 40px;
+    font-family: $oswald-Font;
+    position: absolute;
+    bottom: 150px;
+    display: block;
+    z-index: 5;
+}
+
+.btn-order {
+    height: 60px;
+    width: 150px;
+    position: absolute;
+    bottom: 30px;
+    background-color: $Color-white;
+    color: $Color-black;
+    font-size: 18px;
+    font-family: $oswald-Font;
+    border: 1px solid $Color-black;
+    border-radius: 8px;
+
+    &:hover {
+        color: $Color-white;
+        background-color: #2B2825;
+        transition: 1s;
+    }
+}
+
+.sec-team {
+    margin-top: 40%;
+
+    .team-img {
+        max-width: 1140px;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+
+        .img-1 {
+            height: 425px;
+            width: 340px;
+            background-color: $color-dark;
+
+
+            img {
+                height: 340px;
+                width: 340px;
+                background-size: cover;
+                object-fit: cover;
+                background-position: center;
+
+            }
+        }
+
+        .Designation {
+            color: $Color-white;
+            font-family: $open-font;
+            font-size: 18px;
+            text-align: center;
+            padding-top: 5px;
+        }
+
+        .name {
+            padding-top: 10px;
+            color: $Color-white;
+            font-family: $oswald-Font;
+            font-size: 24px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+
+}
+
+.offer {
+    background: linear-gradient(rgba(43, 40, 37, .9), rgba(43, 40, 37, .9));
+    background-size: cover;
+    height: 480px;
+    width: 100%;
+    margin-top: 100px;
+
+    .text {
+        width: 45%;
+        color: $Color-black;
+        padding: 25px;
+        line-height: 25px;
+        font-size: 16px;
+        font-family: $open-font;
+    }
+
+    .sp-combo {
+        margin-top: 17%;
+    }
+
+
+    .btn {
+        display: flex;
+
+        .btn1 {
+            height: 40px;
+            width: 125px;
+            background-color: $Color-white;
+            margin: 25px;
+            color: $Color-black;
+            font-size: 16px;
+            font-family: $oswald-Font;
+            border-radius: 8px;
+            border: 2px solid $Color-black;
+
+            &:hover {
+                background-color: $bg-color;
+                color: $Color-white;
+                transition: 1s;
+            }
+
+        }
+
+
+        .btn2 {
+            height: 40px;
+            width: 125px;
+            background-color: transparent;
+            border: 2px solid $Color-black;
+            margin: 25px;
+            font-size: 16px;
+            font-family: $oswald-Font;
+            border-radius: 8px;
+            color: $Color-black;
+
+            &:hover {
+                background-color: $Color-white;
+                color: $color-lite;
+                transition: 1s;
+            }
+        }
+
+    }
+}
+
+footer {
+    background: linear-gradient(rgba(43, 40, 37, .5), rgba(43, 40, 37, .5));
+    background-size: cover;
+    height: 420px;
+    width: 100%;
+    margin-top: 8%;
+    display: flex;
+    justify-content: space-around;
+
+    .box {
+        height: 400px;
+        width: 350px;
+        background-color: $color-lite;
+        
+        margin-top: 10px;
+
+        i {
+            color: $color-dark;
+            padding: 7px 15px;
+        }
+
+        .description {
+            color: $Color-black;
+            font-size: 48px;
+            font-family: $oswald-Font;
+            text-transform: uppercase;
+            padding: 7px 15px;
+        }
+
+        .Lorem-text {
+            color: $Color-black;
+            font-size: 16px;
+            font-family: $open-font;
+            padding: 40px 15px;
+        }
+    }
+
+    .get,
+    .QUICK {
+        margin-top: 55px;
+
+        h1 {
+            color: $Color-white;
+            font-size: 24px;
+            font-family: $oswald-Font;
+            text-transform: uppercase;
+            padding: 5px;
+        }
+
+        p {
+            color: $Color-black;
+            font-size: 16px;
+            font-family: $open-font;
+            padding: 10px;
+            text-transform: uppercase;
+        }
+    }
+
+    .NEWSLETTER {
+        margin-top: 55px;
+
+        h1 {
+            color: $Color-white;
+            font-size: 24px;
+            font-family: $oswald-Font;
+            text-transform: uppercase;
+            padding: 5px;
+        }
+
+        p {
+            width: 40%;
+            color: $Color-black;
+            font-size: 16px;
+            font-family: $open-font;
+            padding: 10px;
+        }
+
+        input {
+            height: 45px;
+            width: 180px;
+        }
+
+        button {
+            height: 42px;
+            width: 100px;
+            background-color: $Color-white;
+            color: $Color-black;
+            font-family: $oswald-Font;
+            border: none;
+
+            &:hover {
+                background-color: #101F2E;
+                color: $Color-white;
+                font-family: $oswald-Font;
+                transition: 1s;
+                border: 1px solid $Color-black;
+            }
+        }
+    }
+}
+
+
+.box-fa {
+    background-color: $Color-white;
+    height: 40px;
+    width: 60px;
+    color: $Color-black;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 18px;
+
+    &:hover {
+        background-color: #2B2825;
+        border: 2px solid $Color-black;
+        color: $Color-white;
+        transition: 1s;
+    }
+}
+
+.fa-icon {
+    color: $Color-black;
+    font-size: 18px;
+    padding: 5px;
+}

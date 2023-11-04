@@ -1,0 +1,150 @@
+.containar {
+  max-width: 1540px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 80px;
+  width: 100%;
+  background-color: whitesmoke;
+  position: fixed;
+}
+.containar nav a {
+  padding: 10px;
+  text-decoration: none;
+  color: #54a8c7;
+  font-size: 18px;
+}
+.containar nav a i {
+  padding: 10px 10px;
+}
+.containar .glass i {
+  font-size: 20px;
+  padding-right: 10px;
+}
+.containar .glass button {
+  height: 50px;
+  width: 120px;
+  border-radius: 20px;
+  background-color: #54a8c7;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  max-width: 1240px;
+  height: 700px;
+  margin: auto;
+  background-color: #c2c5cd;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.banner .main h2 {
+  color: #64676b;
+  font-size: 48px;
+  display: block;
+}
+.banner .main p {
+  color: gray;
+  font-size: 25px;
+}
+.banner .main button {
+  height: 50px;
+  width: 120px;
+  border-radius: 20px;
+  background-color: #54a8c7;
+  color: white;
+  border: none;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.banner .main :nth-child(4) {
+  height: 50px;
+  width: 120px;
+  border-radius: 20px;
+  background-color: #cdd9f8;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+.main1 {
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  margin-top: 5%;
+}
+.main1 .text2 p {
+  font-size: 40px;
+  color: hsl(218, 22%, 26%);
+  padding: 10px;
+}
+.main1 .text2 :nth-child(2) {
+  font-size: 20px;
+  color: #343f52;
+}
+.main1 .all-img img {
+  height: 40px;
+  width: 110px;
+  padding-left: 80px;
+  padding-bottom: 50px;
+}
+
+.about-se {
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  margin-top: 5%;
+}
+.about-se .ab-img img {
+  border-radius: 20px;
+}
+.about-se .text-img h1 {
+  padding: 10px;
+}
+.about-se .text-img p {
+  padding: 10px;
+  font-size: 20px;
+}
+.about-se .text-img .flex {
+  margin-top: 15px;
+  display: flex;
+}
+
+.sec-4 {
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #c2c5cd;
+  margin-top: 7%;
+  border-radius: 20px;
+}
+.sec-4 .text-sec-4 .img-cl img {
+  padding-left: 20px;
+}
+.sec-4 .text-sec-4 p {
+  font-size: 20px;
+  padding: 10px;
+  width: 70%;
+}
+.sec-4 .text-sec-4 .p1 {
+  text-align: center;
+  font-weight: bold;
+}
+.sec-4 .text-sec-4 .p2 {
+  text-align: center;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */

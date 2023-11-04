@@ -1,0 +1,44 @@
+$hc: #54a8c7;
+
+.containar {
+    max-width: 1540px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    width: 100%;
+    background-color: whitesmoke;
+    position: fixed;
+
+    nav {
+        a {
+            padding: 10px;
+            text-decoration: none;
+            color:$hc;
+            font-size: 18px;
+
+            i {
+                padding: 10px 10px;
+            }
+        }
+    }
+
+    .glass {
+        i {
+            font-size: 20px;
+            padding-right: 10px;
+        }
+
+        button {
+            height: 50px;
+            width: 120px;
+            border-radius: 20px;
+            // margin-right: 20px;
+            background-color: $hc;
+            color: white;
+            border: none;
+            font-weight: bold;
+        }
+
+    }
+}
